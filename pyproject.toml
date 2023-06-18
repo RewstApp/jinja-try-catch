@@ -5,7 +5,6 @@ description = "Jinja2 extension adding {% try %} {% catch %} exception handling"
 authors = ["Zach Kanzler <zach@rewst.io>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = ""}]
 packages = [
   { include = "jinja_try_catch" },
   { include = "tests", format = "sdist" },
