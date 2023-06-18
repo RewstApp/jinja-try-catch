@@ -1,4 +1,4 @@
-from typing import Any, Callable
+from typing import Any, Callable, Dict, Type
 
 import jinja2
 import jinja2.ext
@@ -9,7 +9,7 @@ from jinja_try_catch.extension import TryCatchExtension
 
 
 @pytest.fixture
-def env_kwargs() -> dict[str, Any]:
+def env_kwargs() -> Dict[str, Any]:
     return dict(
         extensions=[
             TryCatchExtension,
@@ -28,7 +28,7 @@ def is_native_env(request) -> bool:
 
 
 @pytest.fixture
-def env_class(is_native_env) -> type[jinja2.Environment]:
+def env_class(is_native_env) -> Type[jinja2.Environment]:
     return jinja2.nativetypes.NativeEnvironment if is_native_env else jinja2.Environment
 
 
