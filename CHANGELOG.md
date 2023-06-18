@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ## [Unreleased]
+### Misc
+ - Add missing repo URL and trove classifiers to `pyproject.toml`
+ - Add tox config to test on all supported Python versions
 
 
 ## [0.1.0] — 2023-06-18
