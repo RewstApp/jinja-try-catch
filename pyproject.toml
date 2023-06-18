@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jinja-try-catch"
-version = "0.1.0"
+version = "0.1.1"
 description = "Jinja2 extension adding {% try %} {% catch %} exception handling"
 authors = ["Zach Kanzler <zach@rewst.io>"]
 repository = "https://github.com/RewstApp/jinja-try-catch"
